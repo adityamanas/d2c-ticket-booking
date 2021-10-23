@@ -6,7 +6,7 @@ const { tickets } = require("../js/db")
 
 const router = Router()
 
-router.use(function (req, res, next) { setTimeout(next, 10000) })
+// router.use(function (req, res, next) { setTimeout(next, 10000) })
 router.get("/book", bookHandler)
 router.get("/seats", getSeatsHandler)
 router.get("/ticketReset", resetHandler)
