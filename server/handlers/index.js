@@ -67,5 +67,11 @@ async function getSeatsHandler(req, res, next) {
         next(err)
     }
 }
+async function resetHandler(req, res) {
+    let data = new Array(11).fill({ filled: 0, total: 7 })
+    data.push({ filled: 0, total: 3 })
+    tickets.update({ id: process.env.DATA_ID }, { $set: { seats: data } })
+    res.json({ reset: "done" })
+}
 
-module.exports = { bookHandler, getSeatsHandler }
+module.exports = { bookHandler, getSeatsHandler, resetHandler }
