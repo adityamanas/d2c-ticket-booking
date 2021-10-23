@@ -6,9 +6,10 @@ import Button from "../Button";
 import axios from "axios"
 import { booking_api, _availableSeats } from "../../apis";
 
+import spin from "../../assets/loading.gif"
 
 function Loading({ loading }) {
-  return loading ? <div>Loading...</div> : ""
+  return loading ? <img src={spin}></img> : ""
 }
 
 function Main() {
@@ -39,6 +40,7 @@ function Main() {
       setLoading1(false)
       fetchSeats()
     } catch (err) {
+      setLoading1(false)
       console.log(err)
     }
   }
@@ -50,6 +52,7 @@ function Main() {
       console.log(data)
       setLoading2(false)
     } catch (err) {
+      setLoading1(false)
       console.log(err)
     }
   }
