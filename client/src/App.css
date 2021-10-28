@@ -4,13 +4,16 @@
     top: 0px;
     left: 0px;
     z-index: 10;
+    background: blue;
+    box-shadow: 0px 5px 0px 0px #000088;
+    color: white;
 }
 .main_container {
     position: relative;
     width: 100%;
     padding: 150px;
     min-height: 100vh;
-    background-image: url(./assets/bg.jpg);
+    /* background-image: url(./assets/bg.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -37,7 +40,29 @@
     -webkit-backdrop-filter: blur(6.5px);
 }
 
-img{
+img {
     width: 30px;
     height: 30px;
+}
+
+button {
+    border: none;
+    border-radius: 11px;
+    color: white;
+    background-color: blue;
+    transition: all 200ms;
+    padding: 10px;
+}
+.btn {
+    box-shadow: 0px 5px 0px 0px #000088;
+    width: 200px;
+}
+
+.btn:hover {
+    box-shadow: 0px 3px 0px 0px #000088;
+    transform: translateY(3px);
+}
+.btn:active {
+    box-shadow: 0px 0px 0px 0px #000088;
+    transform: translateY(6px);
 }

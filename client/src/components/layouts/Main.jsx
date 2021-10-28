@@ -81,7 +81,7 @@ function Main() {
           <div className="ticketdisplay flex flex-col border border-grey mt-4 rounded-md p-5 shadow">
             <div className="ticket_header relative flex gap-2 mb-2 items-center font-semibold">
               <TicketIcon className="z-10 w-8 h-8 text-black text-opacity-30 top-3 left-3" />
-              <div className="">Booked Tickets</div>
+              <div className="">Booked Ticket Numbers</div>
             </div>
             {
               seat_numbers.length > 0 ? (
@@ -97,7 +97,7 @@ function Main() {
           <div className="ticketdisplay flex flex-col border border-grey mt-4 rounded-md p-5 shadow">
             <div className="ticket_header relative flex gap-2 mb-2 items-center font-semibold">
               <TicketIcon className="z-10 w-8 h-8 text-black text-opacity-30 top-3 left-3" />
-              <div className="">Available Tickets</div>
+              <div className="">Seats</div>
             </div>
             {
               availableSeats.length > 0 ? (
