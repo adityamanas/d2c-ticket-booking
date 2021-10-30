@@ -1,6 +1,6 @@
 {
     "name": "ticket_booking",
-    "homepage": "https://notshekhar.github.io/ticket-booking-client",
+    "homepage": "https://adityamanas.github.io/d2c-ticket-booking",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -12,6 +12,7 @@
         "@testing-library/react": "^11.1.0",
         "@testing-library/user-event": "^12.1.10",
         "axios": "^0.23.0",
+        "firebase": "^9.2.0",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-scripts": "4.0.3",
@@ -24,6 +25,7 @@
         "eject": "react-scripts eject",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
+
     },
     "eslintConfig": {
         "extends": [
